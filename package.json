@@ -1,0 +1,66 @@
+{
+  "name": "pi-analytical-memory",
+  "version": "0.1.0",
+  "description": "Pi extension: analytical <think> discipline, mid-turn loop watchdog and per-session vector memory in SQLite",
+  "type": "module",
+  "license": "MIT",
+  "author": "Manoel Barbosa",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "analytical-memory",
+    "sqlite",
+    "embeddings",
+    "reverse-engineering"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/analytical-memory.ts"
+    ]
+  },
+  "files": [
+    "extensions",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "test": "tsx tests/smoke.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.2"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    },
+    "typebox": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.5.2",
+    "@types/node": "^24.8.0",
+    "tsx": "^4.23.15",
+    "typebox": "^1.1.8",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickarab/pi-analytical-memory.git"
+  },
+  "homepage": "https://github.com/nickarab/pi-analytical-memory#readme",
+  "bugs": {
+    "url": "https://github.com/nickarab/pi-analytical-memory/issues"
+  }
+}
